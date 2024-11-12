@@ -1,0 +1,75 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+/* con lo spam raggiungo questo colore
+e creo classe all-interno h1*/
+.creative {
+  color: rgb(4, 4, 189);
+}
+
+.tile-image {
+  float: left;
+  height: 200px;
+  margin-right: 50px
+  ;
+  display: block;
+}
+/* in sostanza una classe non devo scriverla tutta e mi
+riferisco alla card e dopo infatti a destra e sinistra */
+.card {
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+
+/*istruzioni  fino a 680px fai queste cose */
+@media (max-widht:680px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  /* qui sotto li ha resi block per metterli uno sopra l-altro quando appunto li vediamo su un telefonino */
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}
+
